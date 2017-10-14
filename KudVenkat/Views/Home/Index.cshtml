@@ -11,10 +11,14 @@
 <div class="row">
     @Html.DropDownList("Departments",new List<SelectListItem>
         {
-            new SelectListItem{Text="IT",Value="1",Selected=true},
+            new SelectListItem{Text="IT1",Value="1",Selected=true},
             new SelectListItem{Text="HR",Value="2"},
             new SelectListItem{Text="PayRoll",Value="3"},
 
         },"Select Department")
+
+    @Html.DropDownList("Departments","Select Department")
+    <br/>
+    @Html.TextBox("CompanyName",(string)ViewBag.CompanyName)
 
 </div>

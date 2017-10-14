@@ -154,6 +154,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Company.cs" />
     <Compile Include="Models\KudVenkatMVCDataModel.cs" />
     <Compile Include="Models\tblDepartment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -197,6 +198,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Employee\Index.cshtml" />
     <Content Include="Views\Employee\Department.cshtml" />
+    <Content Include="Views\Home\Index1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
