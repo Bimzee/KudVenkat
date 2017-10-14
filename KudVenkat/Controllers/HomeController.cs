@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLayer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,9 @@ namespace KudVenkat.Controllers
     {
         public ActionResult Index()
         {
+            EmployeeBusinessLayer employeeBusinessLayer = new EmployeeBusinessLayer();
+
+            List<Employee> employees = employeeBusinessLayer.Employees.ToList();
             return View();
         }
 
