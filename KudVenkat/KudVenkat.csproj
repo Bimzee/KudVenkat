@@ -155,6 +155,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\KudVenkatMVCDataModel.cs" />
+    <Compile Include="Models\MVCDataModel.cs" />
+    <Compile Include="Models\City.cs" />
     <Compile Include="Models\tblDepartment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -197,6 +199,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Employee\Index.cshtml" />
     <Content Include="Views\Employee\Department.cshtml" />
+    <Content Include="Views\Home\CheckBox.cshtml" />
+    <Content Include="Views\Home\EditorTemplates\City.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,25 @@
+﻿@*@model IEnumerable<KudVenkat.Models.City>*@
+@model KudVenkat.Models.City
+
+
+@{
+    ViewBag.Title = "CheckBox";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>CheckBox</h2>
+
+@using (Html.BeginForm())
+{
+    @*@Html.CheckBoxFor(x => x.IsSelected)
+
+    @Html.DisplayFor(x => x.Name)*@
+    @Html.CheckBoxFor(x=>x.IsSelected)
+    @Html.DisplayFor(x=>x.Name)
+
+    @Html.EditorForModel()
+    <br/>
+
+    <input type="submit" value="Submit" />
+}
+
