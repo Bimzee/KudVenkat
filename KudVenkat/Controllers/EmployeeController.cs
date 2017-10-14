@@ -28,7 +28,21 @@ namespace KudVenkat.Controllers
             KudVenkatMVCDataModel datamodel = new KudVenkatMVCDataModel();
             var dept = datamodel.tblDepartments;
 
-            ViewBag.Departments1 = new SelectList(datamodel.tblDepartments, "Id", "Name");
+            List<SelectListItem> selectListItem = new List<SelectListItem>();
+
+            foreach (var item in datamodel.tblDepartments)
+            {
+                SelectListItem sItem = new SelectListItem
+                {
+                    Text = item.Name,
+                    Value = item.Id.ToString(),
+                    Selected = item.isSelected.HasValue ? item.isSelected.Value : false
+                };
+                selectListItem.Add(sItem);
+            }
+
+            //ViewBag.Departments1 = new SelectList(datamodel.tblDepartments, "Id", "Name");
+            ViewBag.Departments1 = selectListItem;
             return View();
         }
 

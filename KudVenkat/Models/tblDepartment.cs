@@ -12,5 +12,7 @@ namespace KudVenkat.Models
 
         [StringLength(50)]
         public string Name { get; set; }
+
+        public bool? isSelected { get; set; }
     }
 }
