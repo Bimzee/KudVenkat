@@ -13,6 +13,12 @@ namespace KudVenkat.Models
             this._name = name;
 
         }
+        public Company()
+        {
+
+        }
+
+        public string SelectedDepartment { get; set; }
 
         public List<tblDepartment> Departments
         {

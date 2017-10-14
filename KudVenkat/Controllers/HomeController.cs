@@ -27,6 +27,26 @@ namespace KudVenkat.Controllers
             return View(company);
         }
 
+        [HttpGet]
+        public ActionResult RaioButton()
+        {
+            Company company = new Company("pragim");
+            return View(company);
+        }
+
+        [HttpPost]
+        public string RaioButton(Company company)
+        {
+            if(string.IsNullOrEmpty(company.SelectedDepartment))
+            {
+                return "Please select Department";
+            }
+            else
+            {
+                return "You selected dept with Id " + company.SelectedDepartment;
+            }
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";

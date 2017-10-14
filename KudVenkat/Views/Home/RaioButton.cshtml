@@ -1,0 +1,20 @@
+﻿@model KudVenkat.Models.Company
+
+@{
+    ViewBag.Title = "RaioButton";
+}
+
+<h2>RaioButton</h2>
+
+@using (Html.BeginForm("RaioButton","Home"))
+{
+    foreach(var department in Model.Departments)
+    {
+        @Html.RadioButtonFor(m=>m.SelectedDepartment,department.Id)  @department.Name
+
+
+    }
+    <br/>
+    <input type="submit" value="submit" />
+}
+
