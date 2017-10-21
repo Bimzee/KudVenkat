@@ -154,6 +154,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\EmployeeDataModel.cs" />
     <Compile Include="Models\KudVenkatMVCDataModel.cs" />
     <Compile Include="Models\MVCDataModel.cs" />
     <Compile Include="Models\City.cs" />
@@ -167,6 +169,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Photos\08.jpg" />
+    <Content Include="Photos\12.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -201,6 +205,8 @@
     <Content Include="Views\Employee\Department.cshtml" />
     <Content Include="Views\Home\CheckBox.cshtml" />
     <Content Include="Views\Home\EditorTemplates\City.cshtml" />
+    <Content Include="Views\Home\Index2.cshtml" />
+    <Content Include="Views\Shared\_Employee.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

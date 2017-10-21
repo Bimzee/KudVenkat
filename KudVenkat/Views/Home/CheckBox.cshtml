@@ -1,5 +1,4 @@
-﻿@*@model IEnumerable<KudVenkat.Models.City>*@
-@model KudVenkat.Models.City
+﻿@model IEnumerable<KudVenkat.Models.City>
 
 
 @{
@@ -11,11 +10,7 @@
 
 @using (Html.BeginForm())
 {
-    @*@Html.CheckBoxFor(x => x.IsSelected)
-
-    @Html.DisplayFor(x => x.Name)*@
-    @Html.CheckBoxFor(x=>x.IsSelected)
-    @Html.DisplayFor(x=>x.Name)
+   
 
     @Html.EditorForModel()
     <br/>

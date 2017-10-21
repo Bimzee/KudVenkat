@@ -12,16 +12,16 @@ namespace KudVenkat.Controllers
     public class EmployeeController : Controller
     {
         // GET: Employee
-        public ActionResult Index()
-        {
-            EmployeeBusinessLayer employeeBusinessLayer = new EmployeeBusinessLayer();
+        //public ActionResult Index()
+        //{
+        //    EmployeeBusinessLayer employeeBusinessLayer = new EmployeeBusinessLayer();
 
-            List<Employee> employees = employeeBusinessLayer.Employees.ToList();
+        //    //List<Employee> employees = employeeBusinessLayer.Employees.ToList();
 
-            KudVenkatMVCDataModel datamodel = new KudVenkatMVCDataModel();
-            var dept = datamodel.tblDepartments;
-            return View(employees);
-        }
+        //    //KudVenkatMVCDataModel datamodel = new KudVenkatMVCDataModel();
+        //    //var dept = datamodel.tblDepartments;
+        //    //return View(employees);
+        //}
 
         public ActionResult Department()
         {

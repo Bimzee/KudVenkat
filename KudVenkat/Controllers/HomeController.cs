@@ -11,10 +11,11 @@ namespace KudVenkat.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Index2()
         {
-           
-            return View();
+            EmployeeDataModel dataModel = new EmployeeDataModel();
+
+            return View(dataModel.Employees.ToList());
         }
 
         [HttpGet]
